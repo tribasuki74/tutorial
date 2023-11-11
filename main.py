@@ -10,3 +10,9 @@ async def root():
 @app.get("/hello")
 async def hello():
     return {"Hello"}
+
+@app.get("goodby")
+async def goodby():
+    return {
+        "message": "Goog bye"
+    }
