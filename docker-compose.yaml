@@ -1,0 +1,16 @@
+# docker-compose build
+# docker-compose up
+# docker-compose down
+
+version: '3.3'
+services:
+    fastapi:
+        hostname: fastapi
+        build: .
+        volumes:
+            - .:/app
+        ports:
+            - '8001:8001'
+
+
+
